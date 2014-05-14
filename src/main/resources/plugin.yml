@@ -1,0 +1,27 @@
+name: BukCommands
+main: nl.sheepcraft.bukcommands.Main
+version: ${project.version}
+author: samschaap
+commands:
+  broadcast:
+    description: Broadcast command.
+    permission: bukcommands.broadcast
+    usage: /<command> <message>
+  spawn:
+    description: Spawn command.
+    permission: bukcommands.spawn
+    usage: /<command>
+  workbench:
+    description: Workbench command.
+    permission: bukcommands.workbench
+    usage: /<command>
+permissions:
+   bukcommands.broadcast:
+     description: Broadcast command.
+     default: op
+   bukcommands.spawn:
+     description: Spawn command.
+     default: op
+   bukcommands.workbench:
+     description: Workbench command.
+     default: op
