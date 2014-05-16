@@ -19,6 +19,10 @@ commands:
     description: Gamemode command.
     permission: bukcommands.gm
     usage: /<command> <mode>
+  fly:
+    description: Fly command.
+    permission: bukcommands.fly
+    usage: /<command>
 permissions:
    bukcommands.broadcast:
      description: Broadcast command.
@@ -31,4 +35,7 @@ permissions:
      default: op
    bukcommands.gm:
      description: Gamemode command.
+     default: op
+   bukcommands.fly:
+     description: Fly command.
      default: op
