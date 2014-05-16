@@ -15,9 +15,9 @@ commands:
     description: Workbench command.
     permission: bukcommands.workbench
     usage: /<command>
-  gamemode:
+  gm:
     description: Gamemode command.
-    permission: bukcommands.gamemode
+    permission: bukcommands.gm
     usage: /<command> <mode>
 permissions:
    bukcommands.broadcast:
@@ -29,6 +29,6 @@ permissions:
    bukcommands.workbench:
      description: Workbench command.
      default: op
-   bukcommands.gamemode:
+   bukcommands.gm:
      description: Gamemode command.
      default: op

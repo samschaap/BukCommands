@@ -25,15 +25,16 @@ public class GamemodeCommandExecutor implements CommandExecutor {
                 cs.sendMessage(ChatColor.RED + "Sorry, I can't set gamemode for Console... :(");
             } else {
                 Player player = (Player) cs;
-                if(strings.length < 1) {
+                if (strings.length < 1) {
                     player.sendMessage(ChatColor.RED + "Use: /gm <0/1/2>");
-                }
-                if(strings[0].equalsIgnoreCase("0")) {
-                    player.setGameMode(GameMode.SURVIVAL);
-                } else if(strings[0].equalsIgnoreCase("1")) {
-                    player.setGameMode(GameMode.CREATIVE);
-                } else if(strings[0].equalsIgnoreCase("2")) {
-                    player.setGameMode(GameMode.ADVENTURE);
+                } else {
+                    if (strings[0].equalsIgnoreCase("0")) {
+                        player.setGameMode(GameMode.SURVIVAL);
+                    } else if (strings[0].equalsIgnoreCase("1")) {
+                        player.setGameMode(GameMode.CREATIVE);
+                    } else if (strings[0].equalsIgnoreCase("2")) {
+                        player.setGameMode(GameMode.ADVENTURE);
+                    }
                 }
             }
         }
