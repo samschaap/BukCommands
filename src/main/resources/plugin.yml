@@ -23,6 +23,10 @@ commands:
     description: Fly command.
     permission: bukcommands.fly
     usage: /<command>
+  skull:
+    description: Skull command.
+    permission: bukcommands.skull
+    usage: /<command> <player>
 permissions:
    bukcommands.broadcast:
      description: Broadcast command.
@@ -38,4 +42,7 @@ permissions:
      default: op
    bukcommands.fly:
      description: Fly command.
+     default: op
+   bukcommands.skull:
+     description: Skull command.
      default: op
