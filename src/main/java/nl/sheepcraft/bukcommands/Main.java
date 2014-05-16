@@ -1,6 +1,7 @@
 package nl.sheepcraft.bukcommands;
 
 import nl.sheepcraft.bukcommands.commands.BroadcastCommandExecutor;
+import nl.sheepcraft.bukcommands.commands.GamemodeCommandExecutor;
 import nl.sheepcraft.bukcommands.commands.SpawnCommandExecutor;
 import nl.sheepcraft.bukcommands.commands.WorkbenchCommandExecutor;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -16,6 +17,7 @@ public class Main extends JavaPlugin {
         getCommand("broadcast").setExecutor(new BroadcastCommandExecutor());
         getCommand("spawn").setExecutor(new SpawnCommandExecutor());
         getCommand("workbench").setExecutor(new WorkbenchCommandExecutor());
+        getCommand("gm").setExecutor(new GamemodeCommandExecutor());        
     }
 
 }
