@@ -27,6 +27,10 @@ commands:
     description: Skull command.
     permission: bukcommands.skull
     usage: /<command> <player>
+  heal:
+    description: Heal command.
+    permission: bukcommands.heal
+    usage: /<command> <player>
 permissions:
    bukcommands.broadcast:
      description: Broadcast command.
@@ -45,4 +49,7 @@ permissions:
      default: op
    bukcommands.skull:
      description: Skull command.
+     default: op
+   bukcommands.heal:
+     description: Heal command.
      default: op
