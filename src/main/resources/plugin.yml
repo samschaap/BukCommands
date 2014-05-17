@@ -31,6 +31,10 @@ commands:
     description: Heal command.
     permission: bukcommands.heal
     usage: /<command> <player>
+  resourcedl:
+    description: Resourcedl command.
+    permission: bukcommands.resourcedl
+    usage: /<command> <url>
 permissions:
    bukcommands.broadcast:
      description: Broadcast command.
@@ -52,4 +56,7 @@ permissions:
      default: op
    bukcommands.heal:
      description: Heal command.
+     default: op
+   bukcommands.resourcedl:
+     description: Resourcedl command.
      default: op
