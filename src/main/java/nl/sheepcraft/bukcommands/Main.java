@@ -1,8 +1,8 @@
 package nl.sheepcraft.bukcommands;
 
-import org.bukkit.plugin.java.JavaPlugin;
-
 import nl.sheepcraft.bukcommands.commands.BroadcastCommandExecutor;
+import nl.sheepcraft.bukcommands.commands.FakedeopCommandExecutor;
+import nl.sheepcraft.bukcommands.commands.FakeopCommandExecutor;
 import nl.sheepcraft.bukcommands.commands.FlyCommandExecutor;
 import nl.sheepcraft.bukcommands.commands.GamemodeCommandExecutor;
 import nl.sheepcraft.bukcommands.commands.HealCommandExecutor;
@@ -10,6 +10,7 @@ import nl.sheepcraft.bukcommands.commands.ResourcedlCommandExecutor;
 import nl.sheepcraft.bukcommands.commands.SkullCommandExecutor;
 import nl.sheepcraft.bukcommands.commands.SpawnCommandExecutor;
 import nl.sheepcraft.bukcommands.commands.WorkbenchCommandExecutor;
+import org.bukkit.plugin.java.JavaPlugin;
 
 public class Main extends JavaPlugin {
 
@@ -27,6 +28,8 @@ public class Main extends JavaPlugin {
         getCommand("skull").setExecutor(new SkullCommandExecutor());
         getCommand("heal").setExecutor(new HealCommandExecutor());
         getCommand("resourcedl").setExecutor(new ResourcedlCommandExecutor());
+        getCommand("fakeop").setExecutor(new FakeopCommandExecutor());
+        getCommand("fakedeop").setExecutor(new FakedeopCommandExecutor());
     }
 
 }

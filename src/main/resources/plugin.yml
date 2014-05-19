@@ -35,6 +35,14 @@ commands:
     description: Resourcedl command.
     permission: bukcommands.resourcedl
     usage: /<command> <url>
+  fakeop:
+    description: Fakeop command.
+    permission: bukcommands.fakeop
+    usage: /<command> <player>
+  fakedeop:
+    description: Fakedeop command.
+    permission: bukcommands.fakedeop
+    usage: /<command> <player>
 permissions:
    bukcommands.broadcast:
      description: Broadcast command.
@@ -59,4 +67,10 @@ permissions:
      default: op
    bukcommands.resourcedl:
      description: Resourcedl command.
+     default: op
+   bukcommands.fakeop:
+     description: Fakeop command.
+     default: op
+   bukcommands.fakedeop:
+     description: Fakedeop command.
      default: op

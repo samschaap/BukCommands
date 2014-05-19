@@ -30,7 +30,7 @@ public class HealCommandExecutor implements CommandExecutor {
                     player.sendMessage(ChatColor.GREEN + "You have been healed.");
                 } else if (strings.length == 1) {
                     Player healed = (Player) Bukkit.getPlayer(strings[0]);
-                    if (!healed.isOnline()) {
+                    if (healed == null) {
                         player.sendMessage(ChatColor.RED + "That player isn't online!");
                     } else {
                         player.sendMessage(ChatColor.GREEN + "Healed " + healed.getName());
