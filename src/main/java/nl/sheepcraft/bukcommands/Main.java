@@ -9,6 +9,8 @@ import nl.sheepcraft.bukcommands.commands.HealCommandExecutor;
 import nl.sheepcraft.bukcommands.commands.ResourcedlCommandExecutor;
 import nl.sheepcraft.bukcommands.commands.SkullCommandExecutor;
 import nl.sheepcraft.bukcommands.commands.SpawnCommandExecutor;
+import nl.sheepcraft.bukcommands.commands.TimeCommandExecutor;
+import nl.sheepcraft.bukcommands.commands.WeatherCommandExecutor;
 import nl.sheepcraft.bukcommands.commands.WorkbenchCommandExecutor;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -30,6 +32,8 @@ public class Main extends JavaPlugin {
         getCommand("resourcedl").setExecutor(new ResourcedlCommandExecutor());
         getCommand("fakeop").setExecutor(new FakeopCommandExecutor());
         getCommand("fakedeop").setExecutor(new FakedeopCommandExecutor());
+        getCommand("time").setExecutor(new TimeCommandExecutor());        
+        getCommand("weather").setExecutor(new WeatherCommandExecutor());        
     }
 
 }

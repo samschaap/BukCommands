@@ -43,6 +43,14 @@ commands:
     description: Fakedeop command.
     permission: bukcommands.fakedeop
     usage: /<command> <player>
+  time:
+    description: Time command.
+    permission: bukcommands.time
+    usage: /<command> <day/night>
+  weather:
+    description: Weather command.
+    permission: bukcommands.weather
+    usage: /<command> <sun/storm>
 permissions:
    bukcommands.broadcast:
      description: Broadcast command.
@@ -73,4 +81,10 @@ permissions:
      default: op
    bukcommands.fakedeop:
      description: Fakedeop command.
+     default: op
+   bukcommands.time:
+     description: Time command.
+     default: op
+   bukcommands.weather:
+     description: Weather command.
      default: op

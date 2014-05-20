@@ -22,7 +22,7 @@ public class ResourcedlCommandExecutor implements CommandExecutor {
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
         if (command.getName().equalsIgnoreCase("resourcedl")) {
             if (!(sender instanceof Player)) {
-                sender.sendMessage(ChatColor.RED + "Only players can use this command!");
+                sender.sendMessage(ChatColor.RED + "Sorry, I can't download a resourcepack for Console... :(");
             } else {
                 if (args == null) {
                     Player player = (Player) sender;
