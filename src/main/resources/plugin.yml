@@ -55,6 +55,10 @@ commands:
     description: Weather command.
     permission: bukcommands.weather
     usage: /<command> <sun/storm>
+  playerinfo:
+    description: Playerinfo command.
+    permission: bukcommands.playerinfo
+    usage: /<command> <player>
 permissions:
    bukcommands.bukcommands:
      description: Bukcommands command.
@@ -94,4 +98,7 @@ permissions:
      default: op
    bukcommands.weather:
      description: Weather command.
+     default: op
+   bukcommands.playerinfo:
+     description: Playerinfo command.
      default: op

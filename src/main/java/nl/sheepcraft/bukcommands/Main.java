@@ -7,6 +7,7 @@ import nl.sheepcraft.bukcommands.commands.FakeopCommandExecutor;
 import nl.sheepcraft.bukcommands.commands.FlyCommandExecutor;
 import nl.sheepcraft.bukcommands.commands.GamemodeCommandExecutor;
 import nl.sheepcraft.bukcommands.commands.HealCommandExecutor;
+import nl.sheepcraft.bukcommands.commands.PlayerinfoCommandExecutor;
 import nl.sheepcraft.bukcommands.commands.ResourcedlCommandExecutor;
 import nl.sheepcraft.bukcommands.commands.SkullCommandExecutor;
 import nl.sheepcraft.bukcommands.commands.SpawnCommandExecutor;
@@ -36,6 +37,7 @@ public class Main extends JavaPlugin {
         getCommand("fakedeop").setExecutor(new FakedeopCommandExecutor());
         getCommand("time").setExecutor(new TimeCommandExecutor());        
         getCommand("weather").setExecutor(new WeatherCommandExecutor());        
+        getCommand("playerinfo").setExecutor(new PlayerinfoCommandExecutor());        
     }
 
 }
