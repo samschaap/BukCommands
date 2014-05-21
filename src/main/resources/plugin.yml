@@ -3,6 +3,10 @@ main: nl.sheepcraft.bukcommands.Main
 version: ${project.version}
 author: samschaap
 commands:
+  bukcommands:
+    description: Bukcommands command.
+    permission: bukcommands.bukcommands
+    usage: /<command>
   broadcast:
     description: Broadcast command.
     permission: bukcommands.broadcast
@@ -52,6 +56,9 @@ commands:
     permission: bukcommands.weather
     usage: /<command> <sun/storm>
 permissions:
+   bukcommands.bukcommands:
+     description: Bukcommands command.
+     default: true
    bukcommands.broadcast:
      description: Broadcast command.
      default: op

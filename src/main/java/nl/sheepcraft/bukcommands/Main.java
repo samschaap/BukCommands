@@ -1,6 +1,7 @@
 package nl.sheepcraft.bukcommands;
 
 import nl.sheepcraft.bukcommands.commands.BroadcastCommandExecutor;
+import nl.sheepcraft.bukcommands.commands.BukcommandsCommandExecutor;
 import nl.sheepcraft.bukcommands.commands.FakedeopCommandExecutor;
 import nl.sheepcraft.bukcommands.commands.FakeopCommandExecutor;
 import nl.sheepcraft.bukcommands.commands.FlyCommandExecutor;
@@ -22,6 +23,7 @@ public class Main extends JavaPlugin {
 
     @Override
     public void onEnable() {
+        getCommand("bukcommands").setExecutor(new BukcommandsCommandExecutor());        
         getCommand("broadcast").setExecutor(new BroadcastCommandExecutor());
         getCommand("spawn").setExecutor(new SpawnCommandExecutor());
         getCommand("workbench").setExecutor(new WorkbenchCommandExecutor());
