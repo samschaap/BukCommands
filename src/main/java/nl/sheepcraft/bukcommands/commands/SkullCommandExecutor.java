@@ -38,6 +38,7 @@ public class SkullCommandExecutor implements CommandExecutor {
                      meta.setOwner(strings[0]);
                      skull.setItemMeta(meta);
                      player.getInventory().addItem(skull);
+                     player.sendMessage(ChatColor.GREEN + "Spawned " + strings[0] + "'s head.");
                 }
             }
         }
