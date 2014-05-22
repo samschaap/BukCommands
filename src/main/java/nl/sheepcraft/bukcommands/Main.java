@@ -1,5 +1,6 @@
 package nl.sheepcraft.bukcommands;
 
+import java.io.IOException;
 import nl.sheepcraft.bukcommands.commands.BroadcastCommandExecutor;
 import nl.sheepcraft.bukcommands.commands.BukcommandsCommandExecutor;
 import nl.sheepcraft.bukcommands.commands.FakedeopCommandExecutor;
@@ -15,6 +16,7 @@ import nl.sheepcraft.bukcommands.commands.TimeCommandExecutor;
 import nl.sheepcraft.bukcommands.commands.WeatherCommandExecutor;
 import nl.sheepcraft.bukcommands.commands.WorkbenchCommandExecutor;
 import org.bukkit.plugin.java.JavaPlugin;
+import org.mcstats.MetricsLite;
 
 public class Main extends JavaPlugin {
 
@@ -24,20 +26,29 @@ public class Main extends JavaPlugin {
 
     @Override
     public void onEnable() {
-        getCommand("bukcommands").setExecutor(new BukcommandsCommandExecutor());        
+        //Commands
+        getCommand("bukcommands").setExecutor(new BukcommandsCommandExecutor());
         getCommand("broadcast").setExecutor(new BroadcastCommandExecutor());
         getCommand("spawn").setExecutor(new SpawnCommandExecutor());
         getCommand("workbench").setExecutor(new WorkbenchCommandExecutor());
-        getCommand("gm").setExecutor(new GamemodeCommandExecutor());        
+        getCommand("gm").setExecutor(new GamemodeCommandExecutor());
         getCommand("fly").setExecutor(new FlyCommandExecutor());
         getCommand("skull").setExecutor(new SkullCommandExecutor());
         getCommand("heal").setExecutor(new HealCommandExecutor());
         getCommand("resourcedl").setExecutor(new ResourcedlCommandExecutor());
         getCommand("fakeop").setExecutor(new FakeopCommandExecutor());
         getCommand("fakedeop").setExecutor(new FakedeopCommandExecutor());
-        getCommand("time").setExecutor(new TimeCommandExecutor());        
-        getCommand("weather").setExecutor(new WeatherCommandExecutor());        
-        getCommand("playerinfo").setExecutor(new PlayerinfoCommandExecutor());        
+        getCommand("time").setExecutor(new TimeCommandExecutor());
+        getCommand("weather").setExecutor(new WeatherCommandExecutor());
+        getCommand("playerinfo").setExecutor(new PlayerinfoCommandExecutor());
+
+        //Metrics
+        try {
+            MetricsLite metrics = new MetricsLite(this);
+            metrics.start();
+        } catch (IOException e) {
+            // Failed to submit the stats :-(
+        }
     }
 
 }
