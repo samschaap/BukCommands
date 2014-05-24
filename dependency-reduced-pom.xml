@@ -4,7 +4,7 @@
   <groupId>nl.sheepcraft</groupId>
   <artifactId>BukCommands</artifactId>
   <name>BukCommands</name>
-  <version>1.0.2</version>
+  <version>1.0.3-SNAPSHOT</version>
   <url>http://maven.apache.org</url>
   <build>
     <resources>

@@ -3,6 +3,7 @@ package nl.sheepcraft.bukcommands;
 import java.io.IOException;
 import nl.sheepcraft.bukcommands.commands.BroadcastCommandExecutor;
 import nl.sheepcraft.bukcommands.commands.BukcommandsCommandExecutor;
+import nl.sheepcraft.bukcommands.commands.EnchantingCommandExecutor;
 import nl.sheepcraft.bukcommands.commands.FakedeopCommandExecutor;
 import nl.sheepcraft.bukcommands.commands.FakeopCommandExecutor;
 import nl.sheepcraft.bukcommands.commands.FlyCommandExecutor;
@@ -41,6 +42,7 @@ public class Main extends JavaPlugin {
         getCommand("time").setExecutor(new TimeCommandExecutor());
         getCommand("weather").setExecutor(new WeatherCommandExecutor());
         getCommand("playerinfo").setExecutor(new PlayerinfoCommandExecutor());
+        getCommand("enchanting").setExecutor(new EnchantingCommandExecutor());
 
         //Metrics
         try {

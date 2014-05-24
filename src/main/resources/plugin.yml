@@ -59,6 +59,10 @@ commands:
     description: Playerinfo command.
     permission: bukcommands.playerinfo
     usage: /<command> <player>
+  enchanting:
+    description: Enchanting command.
+    permission: bukcommands.enchanting
+    usage: /<command>
 permissions:
    bukcommands.bukcommands:
      description: Bukcommands command.
@@ -101,4 +105,7 @@ permissions:
      default: op
    bukcommands.playerinfo:
      description: Playerinfo command.
+     default: op
+   bukcommands.enchanting:
+     description: Enchanting command.
      default: op
