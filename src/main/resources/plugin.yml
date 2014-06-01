@@ -63,6 +63,10 @@ commands:
     description: Enchanting command.
     permission: bukcommands.enchanting
     usage: /<command>
+  setspawn:
+    description: Setspawn command.
+    permission: bukcommands.setspawn
+    usage: /<command>
 permissions:
    bukcommands.bukcommands:
      description: Bukcommands command.
@@ -108,4 +112,7 @@ permissions:
      default: op
    bukcommands.enchanting:
      description: Enchanting command.
+     default: op
+   bukcommands.setspawn:
+     description: Setspawn command.
      default: op

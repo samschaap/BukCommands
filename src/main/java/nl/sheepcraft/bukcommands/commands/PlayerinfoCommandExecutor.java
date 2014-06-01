@@ -24,6 +24,7 @@ public class PlayerinfoCommandExecutor implements CommandExecutor {
                 Player info = (Player) Bukkit.getPlayer(strings[0]);
                 cs.sendMessage(ChatColor.GREEN + "===== " + ChatColor.DARK_GREEN + "Player Info" + ChatColor.GREEN + " =====");
                 cs.sendMessage(ChatColor.DARK_GREEN + "Player: " + ChatColor.GREEN + info.getName());
+                cs.sendMessage(ChatColor.DARK_GREEN + "DisplayName: " + ChatColor.GREEN + info.getDisplayName());
                 cs.sendMessage(ChatColor.DARK_GREEN + "IP: " + ChatColor.GREEN + info.getAddress().toString());
                 cs.sendMessage(ChatColor.DARK_GREEN + "OP: " + ChatColor.GREEN + info.isOp());
                 cs.sendMessage(ChatColor.DARK_GREEN + "Gamemode: " + ChatColor.GREEN + info.getGameMode().name());
