@@ -70,7 +70,7 @@ commands:
 permissions:
    bukcommands.bukcommands:
      description: Bukcommands command.
-     default: true
+     default: op
    bukcommands.broadcast:
      description: Broadcast command.
      default: op
