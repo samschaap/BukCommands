@@ -67,6 +67,10 @@ commands:
     description: Setspawn command.
     permission: bukcommands.setspawn
     usage: /<command>
+  serverinfo:
+    description: Serverinfo command.
+    permission: bukcommands.serverinfo
+    usage: /<command>
 permissions:
    bukcommands.bukcommands:
      description: Bukcommands command.
@@ -115,4 +119,7 @@ permissions:
      default: op
    bukcommands.setspawn:
      description: Setspawn command.
+     default: op
+   bukcommands.serverinfo:
+     description: Serverinfo command.
      default: op

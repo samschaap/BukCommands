@@ -11,6 +11,7 @@ import nl.sheepcraft.bukcommands.commands.GamemodeCommandExecutor;
 import nl.sheepcraft.bukcommands.commands.HealCommandExecutor;
 import nl.sheepcraft.bukcommands.commands.PlayerinfoCommandExecutor;
 import nl.sheepcraft.bukcommands.commands.ResourcedlCommandExecutor;
+import nl.sheepcraft.bukcommands.commands.ServerinfoCommandExecutor;
 import nl.sheepcraft.bukcommands.commands.SetspawnCommandExecutor;
 import nl.sheepcraft.bukcommands.commands.SkullCommandExecutor;
 import nl.sheepcraft.bukcommands.commands.SpawnCommandExecutor;
@@ -46,6 +47,7 @@ public class Main extends JavaPlugin {
         getCommand("playerinfo").setExecutor(new PlayerinfoCommandExecutor());
         getCommand("enchanting").setExecutor(new EnchantingCommandExecutor());
         getCommand("setspawn").setExecutor(new SetspawnCommandExecutor());
+        getCommand("serverinfo").setExecutor(new ServerinfoCommandExecutor());
         //Metrics
         try {
             MetricsLite metrics = new MetricsLite(this);
