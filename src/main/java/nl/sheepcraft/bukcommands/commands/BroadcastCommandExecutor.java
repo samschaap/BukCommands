@@ -10,7 +10,6 @@ import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
-import org.bukkit.entity.Player;
 
 /**
  *
@@ -21,7 +20,6 @@ public class BroadcastCommandExecutor implements CommandExecutor {
     @Override
     public boolean onCommand(CommandSender cs, Command cmnd, String string, String[] strings) {
         if (cmnd.getName().equalsIgnoreCase("broadcast")) {
-            Player player = (Player) cs;
             StringBuilder sb = new StringBuilder();
             for (int i = 0; i < strings.length; i++) {
                 sb.append(strings[i]).append(" ");
