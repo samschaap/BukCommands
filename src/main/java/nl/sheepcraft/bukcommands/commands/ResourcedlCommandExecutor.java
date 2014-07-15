@@ -30,8 +30,8 @@ public class ResourcedlCommandExecutor implements CommandExecutor {
                 } else {
                     Player player = (Player) sender;
                     player.setResourcePack(args[0].toString());
-                    player.sendMessage(ChatColor.GREEN + "Resourcepack from URL " + args[0].toString() + " downloading. Make sure you have enabled resource pack downloads in your options!");
-                    Bukkit.getLogger().info(player.getName() + " downloaded resourcepack from URL " + args[0].toString());
+                    player.sendMessage(ChatColor.GREEN + "Resourcepack from URL " + args[0] + " downloading. Make sure you have enabled resource pack downloads in your options!");
+                    Bukkit.getLogger().info(player.getName() + " downloaded resourcepack from URL " + args[0]);
                 }
             }
         }

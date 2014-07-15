@@ -18,6 +18,7 @@ import nl.sheepcraft.bukcommands.commands.SpawnCommandExecutor;
 import nl.sheepcraft.bukcommands.commands.TimeCommandExecutor;
 import nl.sheepcraft.bukcommands.commands.WeatherCommandExecutor;
 import nl.sheepcraft.bukcommands.commands.WorkbenchCommandExecutor;
+import org.bukkit.plugin.PluginDescriptionFile;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.mcstats.MetricsLite;
 
@@ -56,5 +57,4 @@ public class Main extends JavaPlugin {
             // Failed to submit the stats :-(
         }
     }
-
 }
