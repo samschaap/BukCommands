@@ -71,6 +71,10 @@ commands:
     description: Serverinfo command.
     permission: bukcommands.serverinfo
     usage: /<command>
+  fwride:
+    description: Fwride command.
+    permission: bukcommands.fwride
+    usage: /<command>
 permissions:
    bukcommands.bukcommands:
      description: Bukcommands command.
@@ -122,4 +126,7 @@ permissions:
      default: op
    bukcommands.serverinfo:
      description: Serverinfo command.
+     default: op
+   bukcommands.fwride:
+     description: Fwride command.
      default: op

@@ -7,6 +7,7 @@ import nl.sheepcraft.bukcommands.commands.EnchantingCommandExecutor;
 import nl.sheepcraft.bukcommands.commands.FakedeopCommandExecutor;
 import nl.sheepcraft.bukcommands.commands.FakeopCommandExecutor;
 import nl.sheepcraft.bukcommands.commands.FlyCommandExecutor;
+import nl.sheepcraft.bukcommands.commands.FwrideCommandExecutor;
 import nl.sheepcraft.bukcommands.commands.GamemodeCommandExecutor;
 import nl.sheepcraft.bukcommands.commands.HealCommandExecutor;
 import nl.sheepcraft.bukcommands.commands.PlayerinfoCommandExecutor;
@@ -18,7 +19,6 @@ import nl.sheepcraft.bukcommands.commands.SpawnCommandExecutor;
 import nl.sheepcraft.bukcommands.commands.TimeCommandExecutor;
 import nl.sheepcraft.bukcommands.commands.WeatherCommandExecutor;
 import nl.sheepcraft.bukcommands.commands.WorkbenchCommandExecutor;
-import org.bukkit.plugin.PluginDescriptionFile;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.mcstats.MetricsLite;
 
@@ -49,6 +49,7 @@ public class Main extends JavaPlugin {
         getCommand("enchanting").setExecutor(new EnchantingCommandExecutor());
         getCommand("setspawn").setExecutor(new SetspawnCommandExecutor());
         getCommand("serverinfo").setExecutor(new ServerinfoCommandExecutor());
+        getCommand("fwride").setExecutor(new FwrideCommandExecutor());
         //Metrics
         try {
             MetricsLite metrics = new MetricsLite(this);
